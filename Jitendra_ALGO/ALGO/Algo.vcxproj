@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{AFADAF19-756D-4EC4-8125-14C3B77897BD}</ProjectGuid>
+    <RootNamespace>Algo</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>15.0.26730.12</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="001_GiftWrappingAlgorithm_ConvexHull.cpp" />
+    <ClCompile Include="002_T58_GraphDisjointSet.cpp" />
+    <ClCompile Include="003_T67_GraphMinimumSpanningTree.cpp" />
+    <ClCompile Include="004_T62_GraphTopologicalSorting.cpp" />
+    <ClCompile Include="005_TODO_Hackerearth.cpp" />
+    <ClCompile Include="006_2_JobAssignmentProblem_Branch_Bound.cpp" />
+    <ClCompile Include="006_JobAssignmentProblem_Branch_Bound.cpp" />
+    <ClCompile Include="007_1_T55_T56_KMPSearch_pratice_again.cpp" />
+    <ClCompile Include="007_T55_T56_KMPSearch.cpp" />
+    <ClCompile Include="008_NextGreaterNumberProblems.cpp" />
+    <ClCompile Include="009_SamsungInterviewSet_27.cpp" />
+    <ClCompile Include="010_Shortest_path_in_a_Binary_Maze.cpp" />
+    <ClCompile Include="011_T81_SKYLine.cpp" />
+    <ClCompile Include="012_Test_PriorityQueue.cpp" />
+    <ClCompile Include="013_TODO_T_X_TravelSalesmanProblem.cpp" />
+    <ClCompile Include="014__TO_DELETE_Traversal_Binary_Tree.cpp" />
+    <ClCompile Include="015_TreeTraversal.cpp" />
+    <ClCompile Include="016_T_6_WeightedJobScheduling.cpp" />
+    <ClCompile Include="017_T51_Largest_BST_in_Binary_Tree.cpp" />
+    <ClCompile Include="018_TODO_T63_Segment_Tree.cpp" />
+    <ClCompile Include="019_Fenwick_or_BinaryIndex_Tree.cpp" />
+    <ClCompile Include="020_Alternative_Positive_Negative_Number.cpp" />
+    <ClCompile Include="021_SparseTableAlgorithmRangeMinimumQuery.cpp" />
+    <ClCompile Include="022_FindTwoDuplicateNumber_UsingXOR.cpp" />
+    <ClCompile Include="023_SortingAlgorithims.cpp" />
+    <ClCompile Include="024_ConverBinaryTree_to_DoubleLinkList.cpp" />
+    <ClCompile Include="025_TODO_FlatteningLinkedList.cpp" />
+    <ClCompile Include="026_Add_Numbers_Represnted_in_LinkList.cpp" />
+    <ClCompile Include="027_TheStockSpanProblem.cpp" />
+    <ClCompile Include="028_ExpressionConversionEvaluation.cpp" />
+    <ClCompile Include="029_TotalDecodingMessages.cpp" />
+    <ClCompile Include="030_CheckGivenBinaryTree_isComplete.cpp" />
+    <ClCompile Include="031_SlidingWindowMaximum.cpp" />
+    <ClCompile Include="032_CircularTourThatVisitsAllPetrolPumps.cpp" />
+    <ClCompile Include="033_MinimumTimeRequiredToRotAllOranges.cpp" />
+    <ClCompile Include="034_T50_Maximum_RectangularArea_in_a_Histogram.cpp" />
+    <ClCompile Include="035_T1_61_LongestIncreasingSubsequence.cpp" />
+    <ClCompile Include="035_T_1_1_TODO_findCellingIndexBinary_refer35.cpp" />
+    <ClCompile Include="036_T2_CoinChangeNoOfWays.cpp" />
+    <ClCompile Include="037_Convert_BinaryTree_to_BST.cpp" />
+    <ClCompile Include="038_SortedSingleLinkedList_to_BalancedBST.cpp" />
+    <ClCompile Include="039_ConversionSortedDLL_to_BalancedBST.cpp" />
+    <ClCompile Include="040_LargestSumContiguousSubarray.cpp" />
+    <ClCompile Include="041_T3_MinimumNumberOfCoins.cpp" />
+    <ClCompile Include="042_T4_Cutting_a_Rod.cpp" />
+    <ClCompile Include="043_T5_OptimalStrategyForGame.cpp" />
+    <ClCompile Include="044_T14_ConstructAllPossibleBST.cpp" />
+    <ClCompile Include="045_TripletSum.cpp" />
+    <ClCompile Include="046_T20_EggDropping.cpp" />
+    <ClCompile Include="047_T_69_DijkstraShortestPath.cpp" />
+    <ClCompile Include="048_T7_LongestBitonicSubsequence.cpp" />
+    <ClCompile Include="049_T10_MinimumEditDistance.cpp" />
+    <ClCompile Include="050_T11_MaximumSizeSquareSub-matrix.cpp" />
+    <ClCompile Include="051_T12_TotalWays_in_Matrix.cpp" />
+    <ClCompile Include="052_T13_TODO_MinCostPath.cpp" />
+    <ClCompile Include="053_T15_NumberOfBinaryTreesForGivenPreorderSequence.cpp" />
+    <ClCompile Include="054_T16_TODO_LongestPalindromicSubsequence.cpp" />
+    <ClCompile Include="055_T17_PalindromePartitioning.cpp" />
+    <ClCompile Include="056_T18_MatrixChainMultiplication.cpp" />
+    <ClCompile Include="057_T19_WordBreakProblem.cpp" />
+    <ClCompile Include="058_TODO_T22_MinimumJumpToReachEnd.cpp" />
+    <ClCompile Include="059_T23_MaximumSumIncreasingSubsequence.cpp" />
+    <ClCompile Include="060_T24_SubsetSumProblem.cpp" />
+    <ClCompile Include="061_T_X_MedianOfTwoSortedArrays.cpp" />
+    <ClCompile Include="062_T25_StringInterleaving.cpp" />
+    <ClCompile Include="063_T26_MaximumSubsquareWithSidesX.cpp" />
+    <ClCompile Include="064_BipartiteGraph.cpp" />
+    <ClCompile Include="065_Math_on_StringNumbers.cpp" />
+    <ClCompile Include="066_T27_MaximumSUM_noAdjacent.cpp" />
+    <ClCompile Include="067_T28_NumbersWIthoutConsecutiveOnesInBinary.cpp" />
+    <ClCompile Include="068_T29_OptimalBinarySearchTreeDP.cpp" />
+    <ClCompile Include="069_T41_IsBinarySearchTree.cpp" />
+    <ClCompile Include="070_CloneLinkListWithRandomPointer.cpp" />
+    <ClCompile Include="071_MaximumXorOfPairFromRange.cpp" />
+    <ClCompile Include="072_SpecialPrimeNumbers.cpp" />
+    <ClCompile Include="093_NextPermutation.cpp" />
+    <ClCompile Include="094_Math_Functions.cpp" />
+    <ClCompile Include="096_SubsetSumDivisible_by_m.cpp" />
+    <ClCompile Include="095_T_X_BurstBalloonDynamicProgramming.cpp" />
+    <ClCompile Include="097_T_66_CoinChangeTopdown_DP_and_Recurssion.cpp" />
+    <ClCompile Include="098_BooleanParenthesizationProblem.cpp" />
+    <ClCompile Include="099_T70__TODO_KnapsackProblem_TopDown_DP.cpp" />
+    <ClCompile Include="0_Temp.cpp" />
+    <ClCompile Include="073_T_48_MaximumSumRectangularSubmatrix.cpp" />
+    <ClCompile Include="074_DetectCycle_UndirectedGraph.cpp" />
+    <ClCompile Include="075_MergeTwoSortedLinkList.cpp" />
+    <ClCompile Include="076_MissingSmallestPositiveNumber.cpp" />
+    <ClCompile Include="077_TODO_RedBlack.cpp" />
+    <ClCompile Include="078_ExitPointMatrix.cpp" />
+    <ClCompile Include="079_PriorityQueueUsingArray.cpp" />
+    <ClCompile Include="080_QueueUsingArray.cpp" />
+    <ClCompile Include="081_TODO_T_49_WordWrapProblem.cpp" />
+    <ClCompile Include="082_T52_MaximumSizeRectangleOfAllOnes.cpp" />
+    <ClCompile Include="083_PolinomialMultiply_LinkList.cpp" />
+    <ClCompile Include="084_T53_BoxStackingDynamicProgramming.cpp" />
+    <ClCompile Include="085_TODO_T54_SuffixTreeUsingUkkonenAlgorithm.cpp" />
+    <ClCompile Include="086_T57_KnapsackProblem.cpp" />
+    <ClCompile Include="087_TODO_T_X_Trie.cpp" />
+    <ClCompile Include="088_Samsung_10Dec2017.cpp" />
+    <ClCompile Include="089_TODO_T64_StronglyConnectedComponents_ KosarajuGraphAlgorithm.cpp" />
+    <ClCompile Include="090_T65_ArticulationPointsInGraph.cpp" />
+    <ClCompile Include="091_Tower_of_Hanoi.cpp" />
+    <ClCompile Include="092_LongestArithmeticProgression.cpp" />
+    <ClCompile Include="100_T71_TODO_Z_Algothithm_StringMatch.cpp" />
+    <ClCompile Include="101_WildcardPatternMatching_DP.cpp" />
+    <ClCompile Include="102_SamAndSubStrings.cpp" />
+    <ClCompile Include="103_PhoneDirectory_Trie.cpp" />
+    <ClCompile Include="104_XORLinkedList.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="input.txt" />
+    <Text Include="input_1.txt" />
+    <Text Include="output.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ExceptionMsg.h" />
+    <ClInclude Include="PriorityQueue.h" />
+    <ClInclude Include="TreeMap.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
