@@ -1,0 +1,22 @@
+file=$1.cpp
+if [ -f $file ]
+then
+	echo "File $file exists!!!"
+	return
+fi
+
+echo "#include<iostream>" > $file
+echo "using namespace std;" >> $file
+echo "" >> $file
+echo "void" $1 "()" >> $file
+echo "{" >> $file
+echo "" >> $file
+echo "}" >> $file
+
+echo "int main()" >>$file
+echo "{" >> $file
+echo "" >> $file
+echo "	$1 ();" >> $file
+echo "	return 0;" >> $file
+echo "}" >> $file
+vi $file
